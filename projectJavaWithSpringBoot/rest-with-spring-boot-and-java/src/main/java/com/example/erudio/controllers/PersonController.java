@@ -18,6 +18,7 @@ public class PersonController {
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public Person findById(@PathVariable(value = "id") String id)  throws Exception {
+		
 		return service.findById(id);
 	}
 
